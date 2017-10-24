@@ -107,3 +107,5 @@ html_sidebars = {
         'searchbox.html',
     ]
 }
+
+html_favicon = '_static/images/opsa.ico'
