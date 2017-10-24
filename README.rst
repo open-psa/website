@@ -14,5 +14,5 @@ A list of dependencies:
 Package                Minimum Version
 ====================   ===============
 Python                 2.7 or 3.4
-Sphinx                 1.5.1
+Sphinx                 1.6
 ====================   ===============
