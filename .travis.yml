@@ -1,0 +1,22 @@
+language: python
+
+python:
+    - 3.4
+
+env:
+    global:
+        secure: "YSR+rCa+sIx6eeGSHjoEVhK+RfY/sSO4fVjpjf/uHmiF0UWHYBSnER5P+f7L98daw2/rEBXVqke3DJBZA7zmPei6DlzKyhUf/gYs7e1YRStzJ5jDKVJ8mleRIh6JnCuXZTq+YXKHlxGHJ3gz2qOVtq0p7ZjDJr+V4t8Dr/eq4YYRPwXuAPkyPWFIehf8PRKVtpb+6Df0VXhIg74fiF3lWgEY9RgpXgUpAr+fTYM1NF4+f1EqxGyKnrDdZnXp8tQwfEWXZi8RxWCeMK3onSielUKg4gBepDvnsfGF5WmfPqzBcyLewOdX7vNDSRfL6hoEPhb9cMlo4TtK29PPWX8wgZCY844vL6/LAev6O9RpBWPK9bp7FUSmByWKajPfFv5dYcWVeBmcDXdCylo8USMBy+ydSlvBSSRBZ5EpkJ9ECeAeZfagce/yn9w9LX6fKVrvRWYep3tHtGl+cNYRLbiEQYfpzIzRJYh8Gib3ATsk32iI9sjVNM4RIBNQXY4yHVV59V8kZ6WgzIQU4JHwFASW/XHTczw8mebfD98aAzwm/J/LrfP8zKxnbf7rCf7UCYvrG0fppQjhEdDBBFuijEvUEPe3uZnybzWMVJ0UIoLvuRXcMgcQOSOokP/EQhiPHGA/sxfs319nOhs1cWDe/PdS2CyrzzvcSc3YW0VjcBsOyzQ="
+
+install:
+    - pip install sphinx
+
+script:
+    - make html
+
+deploy:
+    local_dir: _build/html
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    on:
+        branch: master

@@ -2,6 +2,11 @@
 The Open-PSA Website
 ####################
 
+.. image:: https://travis-ci.org/open-psa/website.svg?branch=master
+    :target: https://travis-ci.org/open-psa/website
+
+|
+
 This repository contains the source to build open-psa.org website.
 
 
