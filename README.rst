@@ -15,9 +15,10 @@ Building
 
 A list of dependencies:
 
-====================   ===============
-Package                Minimum Version
-====================   ===============
-Python                 2.7 or 3.4
-Sphinx                 1.6
-====================   ===============
+======================   ===============
+Package                  Minimum Version
+======================   ===============
+Python                   2.7 or 3.4
+Sphinx                   1.6
+sphinx_bootstrap_theme   0.6
+======================   ===============
